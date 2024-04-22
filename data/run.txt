@@ -1,0 +1,9 @@
+1/cài đặt package: pip install -r setup.txt
+2/convert-modelServer:
+    python convert_serving.python
+3/kiểm tra thông tin meta-data của file saved_model.pb:
+    #saved_model_cli show --dir temp_models/serving/1 --tag_set serve --signature_def serving_default
+    saved_model_cli show --dir modelserver --tag_set serve --signature_def serving_default
+4/
+
+link-VIBLO: https://viblo.asia/p/model-serving-trien-khai-machine-learning-model-len-production-voi-tensorflow-serving-deploy-machine-learning-model-in-production-with-tensorflow-serving-XL6lAvvN5ek#_grpc-google-remote-procedures-calls-vs-restful-representational-state-transfer-5
